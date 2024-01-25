@@ -1,0 +1,19 @@
+meta {
+  name: POST Date
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseURL}}/JerseyArchetypeDemo/api/hello
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "firstName":"James",
+    "lastName":"Bond",
+    "birthday":"2000-01-01"
+  }
+}
